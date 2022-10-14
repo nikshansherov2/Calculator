@@ -9,11 +9,13 @@ def for_rat(choice):
     num_1 = i.r_value_1()
     num_2 = i.r_value_2()
     if e.check_num(num_1) and e.check_num(num_2):
-
-        num_1, num_2 = eval(num_1), eval(num_2)
-        r.init(num_1, num_2)
-        res = r.do_it(choice)
-        print(f"Результат: {res}\n")
-        l.log(num_1, num_2, res, choice)
+        if choice in ['4', '5', '6'] and num_2 == '0':
+            print("На 0 делить нельзя")
+        else:
+            num_1, num_2 = eval(num_1), eval(num_2)
+            r.init(num_1, num_2)
+            res = r.do_it(choice)
+            print(f"Результат: {res}\n")
+            l.log(num_1, num_2, res, choice)
     else:
         print("Некорректный ввод")
