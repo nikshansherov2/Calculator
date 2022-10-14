@@ -29,3 +29,15 @@ def for_rat(choice):
                 l.log(num_1, num_2, res, choice)
         else:
             print("Некорректный ввод")
+
+
+def for_comp(choice):
+    num_1 = i.c_value_1()
+    num_2 = i.c_value_2()
+    if e.check_num(num_1[0]) and e.check_num(num_1[1]) and \
+            e.check_num(num_2[0]) and e.check_num(num_2[1]):
+        c.init_x(eval(num_1[0]), eval(num_1[1]))
+        c.init_x(eval(num_2[0]), eval(num_2[1]))
+        res = r.do_it(choice)
+        print(f"Результат: {res}\n")
+        l.log(c.x, c.y, res, choice)
