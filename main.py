@@ -41,3 +41,34 @@ def for_comp(choice):
         res = r.do_it(choice)
         print(f"Результат: {res}\n")
         l.log(c.x, c.y, res, choice)
+
+
+while True:
+    choice_1 = i.choice_num()
+    if choice_1 == "1":
+        choice_2 = i.rat()
+        if e.check_rat(choice_2):
+            for_rat(choice_2)
+        elif e.check_back(choice_2):
+            continue
+        elif e.check_exit(choice_2):
+            break
+        else:
+            print("Некорректный ввод")
+            break
+    elif choice_1 == "2":
+        choice_2 = i.comp()
+        if e.check_comp(choice_2):
+            for_comp(choice_2)
+        elif e.check_back(choice_2):
+            continue
+        elif e.check_exit(choice_2):
+            break
+        else:
+            print("Некорректный ввод")
+            break
+    elif e.check_exit(choice_1):
+        break
+    else:
+        print("Некорректный ввод")
+        continue
