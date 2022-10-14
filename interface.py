@@ -34,3 +34,26 @@ def comp():
     print(com)
     return input("Ввод: ")
 
+
+def r_value_1():
+    return input('Enter the first number: ')
+
+
+def r_value_2():
+    return input('Enter the second number: ')
+
+
+def с_value_1():
+    valid = input('Enter the real part of first number: ')
+    imaginary = input('Enter the imaginary part of first number: ')
+    return tuple([valid, imaginary])
+
+
+def с_value_2():
+    valid = input('Enter the real part of second number: ')
+    imaginary = input('Enter the imaginary part of second number: ')
+    return tuple([valid, imaginary])
+
+
+def sqrt_value():
+    return input('Enter the first number: ')
