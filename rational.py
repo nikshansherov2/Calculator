@@ -30,3 +30,14 @@ def sqrt():
 
 def rDiv():
     return x%y
+
+def do_it(operator):
+    match operator:
+        case "1": return sum()
+        case "2": return dif()
+        case "3": return mul()
+        case "4": return div()
+        case "5": return rDiv()
+        case "6": return iDiv()
+        case "7": return pow()
+        case "8": return sqrt()
