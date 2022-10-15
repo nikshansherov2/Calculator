@@ -36,24 +36,24 @@ def comp():
 
 
 def r_value_1():
-    return input('Enter the first number: ')
+    return input('Введите первое число: ')
 
 
 def r_value_2():
-    return input('Enter the second number: ')
+    return input('Введите второе число: ')
 
 
 def с_value_1():
-    valid = input('Enter the real part of first number: ')
-    imaginary = input('Enter the imaginary part of first number: ')
+    valid = input('Введите действительную часть первого числа: ')
+    imaginary = input('Введите мнимую часть первого числа: ')
     return tuple([valid, imaginary])
 
 
 def с_value_2():
-    valid = input('Enter the real part of second number: ')
-    imaginary = input('Enter the imaginary part of second number: ')
+    valid = input('Введите действительную часть второго числа: ')
+    imaginary = input('Введите мнимую часть второго числа: ')
     return tuple([valid, imaginary])
 
 
 def sqrt_value():
-    return input('Enter the first number: ')
+    return input('Введите число: ')
