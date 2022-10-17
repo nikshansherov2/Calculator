@@ -55,7 +55,6 @@ while True:
             break
         else:
             print("Некорректный ввод")
-            break
     elif choice_1 == "2":
         choice_2 = i.comp()
         if e.check_comp(choice_2):
@@ -66,7 +65,6 @@ while True:
             break
         else:
             print("Некорректный ввод")
-            break
     elif e.check_exit(choice_1):
         break
     else:
