@@ -1,5 +1,6 @@
 from datetime import datetime as dt
 
+
 def word(action):
     if action == "1":
         return "сложение"
@@ -16,9 +17,14 @@ def word(action):
     elif action == "7":
         return "возведение в степень"
     elif action == "8":
-        return "извлечение квадратного корня"        
+        return "извлечение квадратного корня"
+
 
 def log(a, b, result, action):
     time = dt.now().strftime('%d-%m-%Y %H:%M:%S')
-    with open('log.txt', 'a') as file:
-        file.write(f'{time}: {a} {b} {word(action)} {result}\n')
+    if action == '8':
+        with open('log.txt', 'a') as file:
+            file.write(f'{time}: {a} {word(action)} {result}\n')
+    else:
+        with open('log.txt', 'a') as file:
+            file.write(f'{time}: {a} {b} {word(action)} {result}\n')
