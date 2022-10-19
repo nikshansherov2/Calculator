@@ -19,6 +19,6 @@ def word(action):
         return "извлечение квадратного корня"        
 
 def log(a, b, result, action):
-    time = dt.now().strftime('%H:%M')
+    time = dt.now().strftime('%d-%m-%Y %H:%M:%S')
     with open('log.txt', 'a') as file:
-        file.write(f'{time}: {a} {b} {word(action)} {result}')
+        file.write(f'{time}: {a} {b} {word(action)} {result}\n')
